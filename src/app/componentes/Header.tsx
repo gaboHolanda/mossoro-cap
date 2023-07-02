@@ -4,14 +4,11 @@ const links = [
     { name: 'Pilotos', href: '#' },
     { name: 'Eventos', href: '#' },
   ]
-  const stats = [
-    { name: 'Anos de Mercado', value: '9' },
-  ]
 
   
 export default function Header() {
     return (
-        <div style={{ minHeight: 600  }} className="border-b-2 border-red-700 border-opacity-30 relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <div style={{ minHeight: 550  }} className="border-b-2 border-red-700 border-opacity-30 relative isolate overflow-hidden bg-gray-900 py-5 sm:py-5">
           <img
             src='podio.jpg'
             style={{ opacity: 0.3 }}
@@ -42,17 +39,18 @@ export default function Header() {
               }}
             />
           </div>
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:mx-0">
-              <h1 className="text-6xl font-bold tracking-tight sm:text-8xl text-red-700 " style={{ textShadow: '0.5px 0.5px 0.5px black' }}>MOSSOROCAP</h1>
-              <p className="mt-6 text-xl leading-8 text-white" style={{ fontFamily: 'sans-serif', fontWeight: 'bold', textShadow: '1px 1px 2px black' }}>
-                Renovadora de Pneus de Moto
-              </p>
+          <div className="ml-10">
+            <div className="max-w-xs ">
+              <img
+                src='logo_sem_fundo.png'
+                alt=""
+                className=""
+              />
             </div>
-            <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none" style={{ fontFamily: 'sans-serif', fontWeight: 'bold', textShadow: '1px 1px 2px black' }}>
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            <div className="ml-10 mt-10 max-w-2xl lg:mx-0 lg:max-w-none" style={{ fontFamily: 'arial', fontWeight: 'bold', textShadow: '1px 1px 2px black' }}>
+              <div className="grid grid-cols-1 gap-x-8 gap-y-6 ml-20 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
                 {links.map((link) => (
-                  <a key={link.name} href={link.href}>
+                  <a key={link.name} href={link.href} style={{ fontSize: 20 }}>
                     {link.name} <span aria-hidden="true">&rarr;</span>
                   </a>
                 ))}
