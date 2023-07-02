@@ -7,7 +7,7 @@ const oswald = Oswald({
 })
 
 const links = [
-    { name: 'Revendedores', href: '#' },
+    { name: 'Distribuidores', href: '#' },
     { name: 'Pilotos', href: '#' },
     { name: 'Eventos', href: '#' },
     { name: 'Sobre Nós', href: '#' },

@@ -44,7 +44,7 @@ export default function index() {
           montserrat.className
         }
       >
-        Revendedores
+        Distribuidores
       </div>
       {revendedores.map((revendedor, index) => {
         return <Revendedor key={index} data={revendedor} />;
