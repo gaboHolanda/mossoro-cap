@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: 'bernard-mt';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./Fontes/bernard-mt-std-condensed.otf');
+}
