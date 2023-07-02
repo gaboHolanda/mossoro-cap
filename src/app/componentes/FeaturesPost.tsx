@@ -21,37 +21,30 @@ export default function FeaturedPost(props: FeaturedPostProps) {
   const { post } = props;
 
   return (
-    <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
-        <Card sx={{ display: "flex" }}>
-          <CardContent
-            sx={{
-              flex: 1,
-              backgroundColor: "#A6161D",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
-            <Typography
-              color="white"
-              className={"font-bold mt-7 " + post.className}
-              component="h2"
-              variant="h3"
-            >
-              {post.title}
-            </Typography>
-          </CardContent>
-          <CardMedia
-            component="img"
-            sx={{
-              width: 200,
-              display: { xs: "none", sm: "block", backgroundColor: "#A6161D" },
-            }}
-            image={post.image}
-            alt={post.imageLabel}
-          />
-        </Card>
-      </CardActionArea>
-    </Grid>
+    <div className="grid grid-cols-5 lg:grid-cols-8">
+      <div
+        style={{
+          flex: 1,
+          backgroundColor: "#A6161D",
+          textAlign: "center",
+          alignItems: "center",
+        }}
+        className="col-span-5 md:col-span-4 lg:col-span-5"
+      >
+        <p className={"text-white py-10 md:py-0 md:mt-[56px] font-bold text-[30px] lg:text-[28px] xl:text-[35px] " + post.className}>
+          {post.title}
+        </p>
+      </div>
+      <div>
+        <img
+          src={post.image}
+          alt={post.imageLabel}
+          className="bg-[#A6161D] col-span-1 lg:col-span-2 hidden md:block"
+          style={{
+            maxWidth: 200,
+          }}
+        />
+      </div>
+    </div>
   );
 }

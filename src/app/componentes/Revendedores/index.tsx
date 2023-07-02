@@ -38,8 +38,9 @@ export default function index() {
   return (
     <>
       <div
+
         className={
-          "text-black bg-white pb-8 text-5xl title-font font-bold  pl-16 " +
+          "text-black bg-white pl-11 sm:pl-20 text-3xl pb-8 sm:text-5xl title-font font-bold  " +
           montserrat.className
         }
       >

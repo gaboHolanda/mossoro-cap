@@ -18,7 +18,7 @@ const revendedores = [
 
 export default function Home() {
   return (
-    <main style={{fontFamily: 'pt-sans-caption'}}>
+    <main className='overflow-hidden' style={{fontFamily: 'pt-sans-caption'}}>
       <ThemeProvider theme={theme}>
         <Header />    
         <AboutUs />

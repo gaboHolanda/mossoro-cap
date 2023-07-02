@@ -31,7 +31,7 @@ export default function Revendedor(props: Revendedor) {
       <section>
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-2 mx-auto">
-            <div className="p-5 bg-red-200 flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col">
+            <div className="p-5 bg-red-200 border border-red-700 flex items-center mx-auto mb-10 rounded-lg sm:flex-row flex-col">
               <div className="sm:w-52 sm:h-52 h-40 w-40 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
                 <img src={data.image} />
               </div>

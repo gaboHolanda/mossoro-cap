@@ -31,9 +31,9 @@ export default function AboutUs() {
   return (
     <div className="relative isolate overflow-hiddenx">
       <div className="absolute inset-0 -z-10 bg-white" />
-      <div className="grid max-w-2xl grid-cols-1 gap-x-52 gap-y-16  lg:max-w-none lg:grid-cols-8 lg:items-start lg:gap-y-5">
-        <div className="lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8 pt-5">
-          <div className="lg:pr-4 pl-9">
+      <div className="grid  grid-cols-3 sm:grid-cols-4 gap-x-48 gap-y-16  lg:max-w-none lg:grid-cols-7 lg:items-start lg:gap-y-5">
+        <div className="md:col-span-4 col-span-3 sm:col-span-4  lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8 pt-5">
+          <div className="lg:pr-4 pl-14">
             <div className="">
               <h1
                 className={
@@ -85,7 +85,7 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="px-12 py-5 ml-2 lg:sticky lg:top-4 col-span-5 lg:col-start-4 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="px-12 pr-24 py-5 ml-2 lg:sticky lg:top-4 col-span-4 lg:col-span-4 lg:col-start-4 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <MainPost post={mainFeaturedPost} />
         </div>
       </div>
