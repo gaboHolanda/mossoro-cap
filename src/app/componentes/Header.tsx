@@ -8,7 +8,7 @@ const links = [
   
 export default function Header() {
     return (
-        <div style={{ minHeight: 550  }} className="border-b-2 border-red-700 border-opacity-30 relative isolate overflow-hidden bg-gray-900 py-5 sm:py-5">
+        <div style={{ minHeight: 550  }} className="relative isolate overflow-hidden bg-gray-900 py-5 sm:py-5">
           <img
             src='podio.jpg'
             style={{ opacity: 0.3 }}
