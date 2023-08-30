@@ -23,7 +23,7 @@ const revendedores = [
   {
     numeros: [
       "Rio Grande do Norte: (84) 99870-2322, (84)99870-2300 ",
-      "Paraíba (84) 99705-9494 ",
+      "Paraíba: (84) 99705-9494 ",
     ],
     cobertura: "RN, PB, PE e CE",
     descricao: "Desde 1998 Líder em Moto Peças",

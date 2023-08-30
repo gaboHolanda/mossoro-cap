@@ -33,7 +33,7 @@ export default function Revendedor(props: Revendedor) {
           <div className="container px-5 py-2 mx-auto">
             <div style={{ backgroundColor: 'rgba(227, 115, 26, 0.6)', borderColor: '#C26641'}} className="p-5 border flex items-center mx-auto mb-10 rounded-lg sm:flex-row flex-col">
               <div className="sm:w-52 sm:h-52 h-40 w-40 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                <img src={data.image} />
+                <img className="rounded-lg" src={data.image} />
               </div>
               <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                 <h1
@@ -45,26 +45,26 @@ export default function Revendedor(props: Revendedor) {
                 >
                   {data.nome}
                 </h1>
-                <div className={"pb-3 ml-2 text-md " + oswald.className}>
+                <div className={"pb-3 ml-2 text-xl font-bold " + oswald.className}>
                   {data.descricao}
                 </div>
                 {data.numeros.map((numero, index) => (
                   <div
                     key={index}
-                    className="flex items-middle mb-1 ml-2"
+                    className="flex items-middle mb-2 ml-2"
                     style={{ color: '#282D27' }}
                   >
                     <WhatsAppIcon sx={{ width: 30, height: 30 }} />
                     <div className="inline-block align-text-top">
-                      <p className={"leading-relaxed text-lg ml-1 " + oswald.className}>
+                      <p className={"leading-relaxed text-xl ml-1 " + oswald.className}>
                         {numero}
                       </p>
                     </div>
                   </div>
                 ))}
-                <div className="flex items-middle mb-1 ml-2" style={{ color: '#282D27' }}>
+                <div className="flex items-middle mb-2 ml-2" style={{ color: '#282D27' }}>
                   <InstagramIcon sx={{ width: 30, height: 30 }} />
-                  <Link target="_blank" underline="none" href={"https://www.instagram.com/"+data.instagram} style={{ color: '#DBDBD3' }} className={"leading-relaxed text-lg ml-1 " + oswald.className}>
+                  <Link target="_blank" underline="none" href={"https://www.instagram.com/"+data.instagram} style={{ color: '#DBDBD3' }} className={"leading-relaxed text-xl ml-1 " + oswald.className}>
                     @{data.instagram}
                   </Link>
                 </div>
