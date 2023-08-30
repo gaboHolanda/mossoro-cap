@@ -1,11 +1,11 @@
-import { Montserrat, Oswald } from "next/font/google";
+import { Montserrat, Alumni_Sans } from "next/font/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
 
-const oswald = Oswald({
+const oswald = Alumni_Sans({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -13,7 +13,7 @@ const oswald = Oswald({
 export default function Footer() {
   return (
     <>
-      <footer className={"bg-[#A6161D] " + oswald.className}>
+      <footer className={"bg-[#C26641] " + oswald.className}>
         <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>

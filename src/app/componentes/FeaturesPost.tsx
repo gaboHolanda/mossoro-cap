@@ -21,17 +21,17 @@ export default function FeaturedPost(props: FeaturedPostProps) {
   const { post } = props;
 
   return (
-    <div className="grid grid-cols-5 lg:grid-cols-8">
+    <div className="grid grid-cols-5 lg:grid-cols-8 w-full">
       <div
         style={{
           flex: 1,
-          backgroundColor: "#A6161D",
+          backgroundColor: "#C26641",
           textAlign: "center",
           alignItems: "center",
         }}
         className="col-span-5 md:col-span-4 lg:col-span-5"
       >
-        <p className={"text-white py-10 md:py-0 md:mt-[56px] font-bold text-[30px] lg:text-[28px] xl:text-[35px] " + post.className}>
+        <p style={{ fontSize: '55px'}} className={"text-white py-10 md:py-0 md:mt-[56px] " + post.className}>
           {post.title}
         </p>
       </div>
@@ -39,7 +39,7 @@ export default function FeaturedPost(props: FeaturedPostProps) {
         <img
           src={post.image}
           alt={post.imageLabel}
-          className="bg-[#A6161D] col-span-1 lg:col-span-2 hidden md:block"
+          className="bg-[#C26641] col-span-1 lg:col-span-2 hidden md:block"
           style={{
             maxWidth: 200,
           }}

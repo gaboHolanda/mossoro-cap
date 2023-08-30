@@ -1,11 +1,11 @@
 import Revendedor from "./Revendedor";
-import { Montserrat, Oswald } from "next/font/google";
+import { Montserrat, Alumni_Sans } from "next/font/google";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
 
-const oswald = Oswald({
+const oswald = Alumni_Sans({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -40,9 +40,11 @@ export default function index() {
       <div
 
         className={
-          "text-black bg-white pl-11 sm:pl-20 text-3xl pb-8 sm:text-5xl title-font font-bold  " +
-          montserrat.className
+          "pl-20 title-font font-bold  " +
+          oswald.className
         }
+
+        style={{ backgroundColor: '#DBDBD3', color: '#282D27', fontSize: '55px' }}
       >
         Distribuidores
       </div>

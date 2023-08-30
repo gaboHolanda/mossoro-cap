@@ -1,4 +1,4 @@
-import { Montserrat, Oswald } from "next/font/google";
+import { Montserrat, Alumni_Sans } from "next/font/google";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from '@mui/material/Link';
@@ -8,7 +8,7 @@ const montserrat = Montserrat({
   weight: ["400", "700"],
 });
 
-const oswald = Oswald({
+const oswald = Alumni_Sans({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -27,20 +27,21 @@ interface Revendedor {
 export default function Revendedor(props: Revendedor) {
   const { data } = props;
   return (
-    <div className="bg-white">
+    <div style={{ backgroundColor: '#DBDBD3' }}>
       <section>
-        <section className="text-gray-600 body-font">
+        <section style={{ color: '#282D27' }} className="body-font">
           <div className="container px-5 py-2 mx-auto">
-            <div className="p-5 bg-red-200 border border-red-700 flex items-center mx-auto mb-10 rounded-lg sm:flex-row flex-col">
+            <div style={{ backgroundColor: 'rgba(227, 115, 26, 0.6)', borderColor: '#C26641'}} className="p-5 border flex items-center mx-auto mb-10 rounded-lg sm:flex-row flex-col">
               <div className="sm:w-52 sm:h-52 h-40 w-40 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
                 <img src={data.image} />
               </div>
               <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                 <h1
                   className={
-                    "text-black text-3xl title-font font-bold mb-1 " +
+                    "text-3xl title-font font-bold mb-1 " +
                     montserrat.className
                   }
+                  style={{ color: '#282D27' }}
                 >
                   {data.nome}
                 </h1>
@@ -50,7 +51,8 @@ export default function Revendedor(props: Revendedor) {
                 {data.numeros.map((numero, index) => (
                   <div
                     key={index}
-                    className="flex text-black items-middle mb-1 ml-2"
+                    className="flex items-middle mb-1 ml-2"
+                    style={{ color: '#282D27' }}
                   >
                     <WhatsAppIcon sx={{ width: 30, height: 30 }} />
                     <div className="inline-block align-text-top">
@@ -60,9 +62,9 @@ export default function Revendedor(props: Revendedor) {
                     </div>
                   </div>
                 ))}
-                <div className="flex text-black items-middle mb-1 ml-2">
+                <div className="flex items-middle mb-1 ml-2" style={{ color: '#282D27' }}>
                   <InstagramIcon sx={{ width: 30, height: 30 }} />
-                  <Link target="_blank" underline="none" href={"https://www.instagram.com/"+data.instagram} className={"leading-relaxed text-lg text-red-800 ml-1 " + oswald.className}>
+                  <Link target="_blank" underline="none" href={"https://www.instagram.com/"+data.instagram} style={{ color: '#DBDBD3' }} className={"leading-relaxed text-lg ml-1 " + oswald.className}>
                     @{data.instagram}
                   </Link>
                 </div>
